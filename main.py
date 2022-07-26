@@ -2,6 +2,8 @@
 import sys
 import os
 from deepmultilingualpunctuation import PunctuationModel
+import nltk
+
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -9,6 +11,7 @@ warnings.filterwarnings("ignore")
 def main():
     f = "transcript2.txt"
     model = PunctuationModel()
+    tokenizer = nltk.data.load('tokenizers/punkt/french.pickle')
 
 
     with open(f, "r") as f:
@@ -17,7 +20,11 @@ def main():
         text = text.replace("\n", " ")
         text = text.replace("\r", " ")
         result = model.restore_punctuation(text)
-        print(result)
+        sentences = [s.capitalize() for s in tokenizer.tokenize(result)]
+        text = " ".join(sentences)
+        print(text)
+        
+
 
 
 
