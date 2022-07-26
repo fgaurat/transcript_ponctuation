@@ -1,3 +1,5 @@
+# Readme transcript_ponctuation
+## install
 mkdir youtube_transcript
 
 cd youtube_transcript
@@ -18,4 +20,6 @@ pip install sentencepiece
 
 pip install protobuf==3.20 < La dernière version ne fonctionnait pas chez moi du coup isntallation d'une version plus anciennes
 
+
+##
 ./main.py
