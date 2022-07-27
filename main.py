@@ -3,6 +3,7 @@ import sys
 import os
 from deepmultilingualpunctuation import PunctuationModel
 import nltk
+import argparse
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -27,11 +28,6 @@ def main():
 
 
 
-
-
-
-
-
 if __name__ == '__main__':
-    
+
     main()
