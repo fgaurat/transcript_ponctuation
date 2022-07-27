@@ -10,7 +10,9 @@ idna==3.3
 joblib==1.1.0
 nltk==3.7
 numpy==1.23.1
+opencv-python==4.6.0.66
 packaging==21.3
+pafy==0.5.5
 protobuf==3.20.0
 pyparsing==3.0.9
 PySocks==1.7.1
@@ -28,3 +30,4 @@ tqdm==4.64.0
 transformers==4.20.1
 typing_extensions==4.3.0
 urllib3==1.26.11
+youtube-dl==2020.12.2
